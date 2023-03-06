@@ -1,0 +1,9 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/magnum/ros2_msg/install/python/lib/python3.8/site-packages",
+        "/home/magnum/ros2_msg/install/my_robot_message/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "git.ignoreLimitWarning": true
+}
