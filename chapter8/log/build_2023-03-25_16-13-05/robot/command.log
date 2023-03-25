@@ -1,6 +1,0 @@
-Invoking command in '/home/magnum/chapter8_ws/src/chapter8/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/magnum/chapter8_ws/src/chapter8/robot -DCMAKE_INSTALL_PREFIX=/home/magnum/chapter8_ws/src/chapter8/install/robot
-Invoked command in '/home/magnum/chapter8_ws/src/chapter8/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/magnum/chapter8_ws/src/chapter8/robot -DCMAKE_INSTALL_PREFIX=/home/magnum/chapter8_ws/src/chapter8/install/robot
-Invoking command in '/home/magnum/chapter8_ws/src/chapter8/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/magnum/chapter8_ws/src/chapter8/build/robot -- -j8 -l8
-Invoked command in '/home/magnum/chapter8_ws/src/chapter8/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/magnum/chapter8_ws/src/chapter8/build/robot -- -j8 -l8
-Invoking command in '/home/magnum/chapter8_ws/src/chapter8/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/magnum/chapter8_ws/src/chapter8/build/robot
-Invoked command in '/home/magnum/chapter8_ws/src/chapter8/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/magnum/chapter8_ws/src/chapter8/build/robot
