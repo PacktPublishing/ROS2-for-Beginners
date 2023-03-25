@@ -1,0 +1,81 @@
+[0.013s] Invoking command in '/home/magnum/chapter8_ws/src/chapter8/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/magnum/chapter8_ws/src/chapter8/robot -DCMAKE_INSTALL_PREFIX=/home/magnum/chapter8_ws/src/chapter8/install/robot
+[0.079s] -- The C compiler identification is GNU 9.4.0
+[0.137s] -- The CXX compiler identification is GNU 9.4.0
+[0.141s] -- Check for working C compiler: /usr/bin/cc
+[0.218s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.219s] -- Detecting C compiler ABI info
+[0.298s] -- Detecting C compiler ABI info - done
+[0.308s] -- Detecting C compile features
+[0.308s] -- Detecting C compile features - done
+[0.310s] -- Check for working CXX compiler: /usr/bin/c++
+[0.424s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.425s] -- Detecting CXX compiler ABI info
+[0.540s] -- Detecting CXX compiler ABI info - done
+[0.549s] -- Detecting CXX compile features
+[0.549s] -- Detecting CXX compile features - done
+[0.551s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.580s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.580s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.822s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.905s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.942s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.943s] -- Configured cppcheck include dirs: 
+[0.943s] -- Configured cppcheck exclude dirs and/or files: 
+[0.981s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.981s] -- Configured cpplint exclude dirs and/or files: 
+[0.988s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.002s] -- Added test 'lint_cmake' to check CMake code style
+[1.007s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.044s] -- Added test 'uncrustify' to check C / C++ code style
+[1.044s] -- Configured uncrustify additional arguments: 
+[1.050s] -- Added test 'xmllint' to check XML markup files
+[1.051s] -- Configuring done
+[1.052s] -- Generating done
+[1.053s] -- Build files have been written to: /home/magnum/chapter8_ws/src/chapter8/build/robot
+[1.057s] Invoked command in '/home/magnum/chapter8_ws/src/chapter8/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/magnum/chapter8_ws/src/chapter8/robot -DCMAKE_INSTALL_PREFIX=/home/magnum/chapter8_ws/src/chapter8/install/robot
+[1.059s] Invoking command in '/home/magnum/chapter8_ws/src/chapter8/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/magnum/chapter8_ws/src/chapter8/build/robot -- -j8 -l8
+[1.111s] Invoked command in '/home/magnum/chapter8_ws/src/chapter8/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/magnum/chapter8_ws/src/chapter8/build/robot -- -j8 -l8
+[1.149s] Invoking command in '/home/magnum/chapter8_ws/src/chapter8/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/magnum/chapter8_ws/src/chapter8/build/robot
+[1.158s] -- Install configuration: ""
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/show.robot.launch.py
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/navigation.launch.py
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/robot.launch.py
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/online_async.launch.py
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/point_cloud_to_laser.launch.py
+[1.158s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/nav2.launch.py
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/launch/offline_launch.py
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/robot.urdf.xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/dept_camera.xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/lidar_sensor.xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/robot.xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/inertial.xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/description/gazebo_controller.xacro
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/params
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/params/nav.yaml
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/params/mapper_params_offline.yaml
+[1.159s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/params/mapper_params_online_async.yaml
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/params/nav2.yaml
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/maps
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/maps/offline.pgm
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/maps/first.yaml.yaml
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/maps/offline.yaml
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/maps/first.yaml.pgm
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/environment/ament_prefix_path.sh
+[1.160s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/environment/ament_prefix_path.dsv
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/environment/path.sh
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/environment/path.dsv
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/local_setup.bash
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/local_setup.sh
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/local_setup.zsh
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/local_setup.dsv
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/package.dsv
+[1.161s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/ament_index/resource_index/packages/robot
+[1.162s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/cmake/robotConfig.cmake
+[1.162s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/cmake/robotConfig-version.cmake
+[1.162s] -- Installing: /home/magnum/chapter8_ws/src/chapter8/install/robot/share/robot/package.xml
+[1.178s] Invoked command in '/home/magnum/chapter8_ws/src/chapter8/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/magnum/chapter8_ws/src/chapter8/build/robot
