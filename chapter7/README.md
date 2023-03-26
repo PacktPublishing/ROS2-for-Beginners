@@ -122,6 +122,16 @@ We can echo the '/cmd_vel' topic to see the amount of velocity speed which is be
 ```
 ![Screenshot from 2023-03-26 16-02-30](https://user-images.githubusercontent.com/97457075/227784606-ca28d38e-26b3-483f-96de-ce14dbcfb8a0.png)
 
+# We can write a node to subscribes to the '/cmd_vel' topic when velocity is being pubslished to the robot.
+Run the node with the command below:
+```
+  ros2 run drive_robot move_sub.py
+```
+We should see the robot drive at a certain velocity,while the move_sub.py node subscibes to the velocity speed.Illustration below:
+
+![Screenshot from 2023-03-26 17-19-45](https://user-images.githubusercontent.com/97457075/227789676-2828ce54-b4ea-4f2e-911a-a501025ed30f.png)
+
+
 
 
 
