@@ -129,6 +129,12 @@ Run the node with the command below:
 ```
 We should see the robot drive at a certain velocity,while the move_sub.py node subscibes to the velocity speed.Illustration below:
 
+![Screenshot from 2023-03-26 17-19-37](https://user-images.githubusercontent.com/97457075/227789768-c0acbf3e-9d65-4fa2-9dd6-060e9a163ee1.png)
+
+
+
+
+
 ![Screenshot from 2023-03-26 17-19-45](https://user-images.githubusercontent.com/97457075/227789676-2828ce54-b4ea-4f2e-911a-a501025ed30f.png)
 
 
