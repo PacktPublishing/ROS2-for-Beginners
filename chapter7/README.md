@@ -120,5 +120,8 @@ We can echo the '/cmd_vel' topic to see the amount of velocity speed which is be
 ```
   ros2 topic echo /cmd_vel
 ```
+![Screenshot from 2023-03-26 16-02-30](https://user-images.githubusercontent.com/97457075/227784606-ca28d38e-26b3-483f-96de-ce14dbcfb8a0.png)
+
+
 
 
