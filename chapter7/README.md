@@ -107,7 +107,11 @@ Run the slam_toolbox node.
 ```
 [Screencast from 03-09-2023 11:21:33 AM.webm](https://user-images.githubusercontent.com/97457075/224001965-dfaaf7e7-9660-437a-94b4-5b78740142ad.webm)
 
-
+# DRIVING THE ROBOT PROGRAMMATICALLY:
+Open a new terminal and type the command below:
+```
+  ros2 run drive_robot velocity_drive
+```
 
 
 
