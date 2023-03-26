@@ -107,6 +107,37 @@ Run the slam_toolbox node.
 ```
 [Screencast from 03-09-2023 11:21:33 AM.webm](https://user-images.githubusercontent.com/97457075/224001965-dfaaf7e7-9660-437a-94b4-5b78740142ad.webm)
 
+# DRIVING THE ROBOT PROGRAMMATICALLY:
+Open a new terminal and type the command below:
+```
+  ros2 run drive_robot velocity_drive
+```
+You will see the robot drive forward like the video illustracted below:
+
+[Screencast from 03-26-2023 03:47:34 PM.webm](https://user-images.githubusercontent.com/97457075/227783989-12f4b40f-e356-4ea7-907f-0c4183c9544b.webm)
+
+We can echo the '/cmd_vel' topic to see the amount of velocity speed which is being published to the robot,since the robot is driving forward at 0.2.We should see 0.2  at linear of x ,being echoed out.Command as stated below:
+```
+  ros2 topic echo /cmd_vel
+```
+![Screenshot from 2023-03-26 16-02-30](https://user-images.githubusercontent.com/97457075/227784606-ca28d38e-26b3-483f-96de-ce14dbcfb8a0.png)
+
+# We can write a node to subscribes to the '/cmd_vel' topic when velocity is being pubslished to the robot.
+Run the node with the command below:
+```
+  ros2 run drive_robot move_sub.py
+```
+We should see the robot drive at a certain velocity,while the move_sub.py node subscibes to the velocity speed.Illustration below:
+
+![Screenshot from 2023-03-26 17-19-37](https://user-images.githubusercontent.com/97457075/227789768-c0acbf3e-9d65-4fa2-9dd6-060e9a163ee1.png)
+
+
+
+
+
+![Screenshot from 2023-03-26 17-19-45](https://user-images.githubusercontent.com/97457075/227789676-2828ce54-b4ea-4f2e-911a-a501025ed30f.png)
+
+[Screencast from 03-26-2023 05:31:06 PM.webm](https://user-images.githubusercontent.com/97457075/227790106-023d7f1a-f0fb-4f7b-bd36-4efef240cf9c.webm)
 
 
 
