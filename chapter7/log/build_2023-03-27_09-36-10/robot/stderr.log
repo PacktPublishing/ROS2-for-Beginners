@@ -1,0 +1,1 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/magnum/Desktop/Push_to_ros_book/chapter7/build/robot/CMakeCache.txt is different than the directory /home/magnum/simuate_ws/src/robot/build/robot where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
