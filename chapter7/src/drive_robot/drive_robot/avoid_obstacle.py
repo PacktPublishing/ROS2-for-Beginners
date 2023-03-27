@@ -6,7 +6,7 @@ from sensor_msgs.msg import LaserScan
 
 class obstacle(Node):
     def __init__(self):
-        super().__init__("finite_state")
+        super().__init__("avoidance_node")
         self.pub = self.create_publisher(Twist,'/cmd_vel',100)
         self.sub_laser = self.create_subscription(LaserScan,'/scan',self.callback_laser,100)
         #self.sub_odometry = self.create_subscription(Odometry,'/odom',self.call_back_odom,100)
