@@ -139,6 +139,12 @@ We should see the robot drive at a certain velocity,while the move_sub.py node s
 
 [Screencast from 03-26-2023 05:31:06 PM.webm](https://user-images.githubusercontent.com/97457075/227790106-023d7f1a-f0fb-4f7b-bd36-4efef240cf9c.webm)
 
+# Obstacle Avoidance Node:
+To run the node , Open a new terminal and execute the node with the command below:
+```
+  ros2 run drive_robot obstacle_avoidance
+```
+
 
 
 
