@@ -149,4 +149,10 @@ The node helps to avoid obstacle and tells to robot to rotate to the available f
 
 [Screencast from 03-27-2023 09:30:39 AM.webm](https://user-images.githubusercontent.com/97457075/227890748-a77d4407-c20c-4d64-ad29-abedcb7a3e39.webm)
 
-
+# INSTALL ALL DEPENDECIES FOR SLAM:
+``` 
+  sudo apt install ros-<ros2_distro>-slam-toolbox
+```
+```
+  sudo apt install ros-foxy-slam-toolbox
+```
