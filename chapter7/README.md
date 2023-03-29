@@ -181,4 +181,6 @@ Save the map by using the command below:
 ```
 When done saving the map,you will get a .pgm and a .yaml file(The .pgm file contains the picture or image of how our map is, while the .yaml contains the information of the map,e.g the resolution of the map etc).
 
-![Screenshot from 2023-03-29 15-07-42](https://user-images.githubusercontent.com/97457075/228565522-91633162-4b1c-4d74-81dc-5532563ec8e1.png)
+![Screenshot from 2023-03-29 15-12-04](https://user-images.githubusercontent.com/97457075/228566081-900645b7-f07e-4d29-9d6c-a7dd4ad98e8c.png)
+
+
