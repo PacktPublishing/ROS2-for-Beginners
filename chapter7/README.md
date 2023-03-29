@@ -166,4 +166,5 @@ The node helps to avoid obstacle and tells to robot to rotate to the available f
 ```
 # Generating a map of the environemnt by the robot.
 ```
-  ros2 launch robot online
+  ros2 launch robot online_async.launch 
+```
