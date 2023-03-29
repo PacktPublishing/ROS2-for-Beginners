@@ -179,3 +179,6 @@ Save the map by using the command below:
 ```
  ros2 run nav2_map_server map_saver_cli -f <name_of_map>
 ```
+When done saving the map,you will get a .pgm and a .yaml file(The .pgm file contains the picture or image of how our map is, while the .yaml contains the information of the map,e.g the resolution of the map etc).
+
+![Screenshot from 2023-03-29 15-07-42](https://user-images.githubusercontent.com/97457075/228565522-91633162-4b1c-4d74-81dc-5532563ec8e1.png)
