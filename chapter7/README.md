@@ -168,3 +168,5 @@ The node helps to avoid obstacle and tells to robot to rotate to the available f
 ```
   ros2 launch robot online_async.launch 
 ```
+
+![Screenshot from 2023-03-29 14-54-00](https://user-images.githubusercontent.com/97457075/228560723-45aeb5a2-e9b2-49e3-b5a3-c8b44ef68517.png)
