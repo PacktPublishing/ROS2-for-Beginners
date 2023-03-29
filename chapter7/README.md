@@ -164,3 +164,6 @@ The node helps to avoid obstacle and tells to robot to rotate to the available f
 ```
   sudo apt install ros-foxy-navigation2
 ```
+# Generating a map of the environemnt by the robot.
+```
+  ros2 launch robot online
