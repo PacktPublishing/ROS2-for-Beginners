@@ -156,3 +156,7 @@ The node helps to avoid obstacle and tells to robot to rotate to the available f
 ```
   sudo apt install ros-foxy-slam-toolbox
 ```
+# Navigation 2 :
+```
+  sudo apt install ros-<ros2-distro>-navigation2
+```
