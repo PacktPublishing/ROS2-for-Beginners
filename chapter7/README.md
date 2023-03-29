@@ -43,7 +43,7 @@ Start up Gazebo:
 ```
 
 # SPAWNING THE ROBOT INTO GAZEBO:
-     To spawn the robot into gazebo, launch the file called show.robot.launch.py (Note: launch files in ROS 2 are python scripts/files)
+    To spawn the robot into gazebo, launch the file called show.robot.launch.py (Note: launch files in ROS 2 are python scripts/files)
  Command:
  ```
    ros2 launch robot show.robot.launch.py
