@@ -174,3 +174,8 @@ Gazebo World:
 Rviz2(Visualization)
 
 ![Screenshot from 2023-03-29 14-53-46](https://user-images.githubusercontent.com/97457075/228561488-94844965-0f0e-4b57-a4f4-11b9757ecb64.png)
+
+Save the map by using the command below:
+```
+ ros2 run nav2_map_server map_saver_cli -f <name_of_map>
+```
