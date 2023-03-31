@@ -190,10 +190,15 @@ When done saving the map,you will get a .pgm and a .yaml file(The .pgm file cont
 # DISPLAY THE .yaml FILE:
 
 image: first.yaml.pgm
+
 mode: trinary
+
 resolution: 0.05
+
 origin: [-20.4, -12.9, 0]
+
 negate: 0
+
 occupied_thresh: 0.65
 
 
