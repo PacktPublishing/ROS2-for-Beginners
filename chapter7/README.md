@@ -183,4 +183,7 @@ When done saving the map,you will get a .pgm and a .yaml file(The .pgm file cont
 
 ![Screenshot from 2023-03-29 15-12-04](https://user-images.githubusercontent.com/97457075/228566081-900645b7-f07e-4d29-9d6c-a7dd4ad98e8c.png)
 
+# THE MAP SERVER NODE(nav2 map server).
+The map server provides maps to the other Nav2 system and this system use ros 2 topics and also services.Maps can be saved using the map_saver node .The saved map can be provided using the map_server node,which a map will be used and provided to the robot for localization and path-planning.The ROS 2 node that is modular is the Map server. The map server program instances one of these nodes by default ,but if more than one map server node is required,it is possible to combine them into a single process.
+
 
