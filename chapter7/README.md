@@ -271,3 +271,8 @@ After this is launched,we will have to set the initial pose of the robot in the 
 
 
 [Screencast from 03-31-2023 01:54:09 PM.webm](https://user-images.githubusercontent.com/97457075/229128097-158af385-226b-4b83-a844-3520b5771a34.webm)
+
+# Driving the robot in Trianglular manner:
+```
+ ros2 run drive_robot triangle
+```
