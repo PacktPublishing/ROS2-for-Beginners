@@ -230,3 +230,21 @@ def generate_launch_description():
   
   'offline.yaml'))
 ```
+
+The param_file_name takes in the name of the nav2.yaml file that contains various parameters used in optimizing the robot when sending a goal to the robot.Ours is called ‘nav2.yaml’ which is located in a directory called ‘params’ and the package name is ‘robot’.	
+
+```
+  param_file_name = 'nav2.yaml'
+  
+  param_dir = LaunchConfiguration(
+  
+  'params_file',
+  
+  default=os.path.join(
+  
+  get_package_share_directory('robot'),
+  
+  'params',
+  
+  param_file_name))
+```
