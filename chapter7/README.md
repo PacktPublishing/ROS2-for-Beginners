@@ -257,3 +257,7 @@ Then Open another terminal and launch the Navigation stack(Nav2)The launch file 
 ```
   ros2 launch robot navigation.launch.py
 ```
+#NOTE: The launch file includes the localization node and path plannig node in a single thread(component).
+
+After this is launched,we will have to set the initial pose of the robot in the map(initial pose meaning where you think the robot is in the map) This subscribes to the particle filters(it’s a probalistic localization system for a robot which is moving in 2D space it is also called Adaptive Monte Carlo Localization Node).	
+
