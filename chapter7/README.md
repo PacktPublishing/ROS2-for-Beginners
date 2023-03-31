@@ -248,3 +248,12 @@ The param_file_name takes in the name of the nav2.yaml file that contains variou
   
   param_file_name))
 ```
+Open a terminal and launch the following:
+```
+  ros2 launch robot show.robot.launch.py world:='path to where the created world was saved'
+```
+
+Then Open another terminal and launch the Navigation stack(Nav2)The launch file automatically launches the Localization and Path-planning Node.
+```
+  ros2 launch robot navigation.launch.py
+```
