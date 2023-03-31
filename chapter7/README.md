@@ -183,4 +183,91 @@ When done saving the map,you will get a .pgm and a .yaml file(The .pgm file cont
 
 ![Screenshot from 2023-03-29 15-12-04](https://user-images.githubusercontent.com/97457075/228566081-900645b7-f07e-4d29-9d6c-a7dd4ad98e8c.png)
 
+# THE MAP SERVER NODE(nav2 map server).
 
+   The map server provides maps to the other Nav2 system and this system use ros 2 topics and also services.Maps can be saved using the map_saver node .The saved map can be provided using the map_server node,which a map will be used and provided to the robot for localization and path-planning.The ROS 2 node that is modular is the Map server. The map server program instances one of these nodes by default ,but if more than one map server node is required,it is possible to combine them into a single process.In comparison to ROS1,the command line for the map server application has somewhat changed.When using ROS1,the map server was called while giving the map’s YAML filename.
+
+# DISPLAY THE .yaml FILE:
+
+image: first.yaml.pgm
+
+mode: trinary
+
+resolution: 0.05
+
+origin: [-20.4, -12.9, 0]
+
+negate: 0
+
+occupied_thresh: 0.65
+
+NOTE: By supplying the the params(parameter) file on the command line, one  can call the map service executable directly as follows:
+```
+  __params:=<name_of_map>.yaml
+```
+
+# PERFORMING PATH PLANNING(SEND THE ROBOT TO GO FROM POINT A TO POINT B).
+We have been able to discuss about how we can generate a map of the environment using the slam_toolbox and also how we can save the  generated map.Now,we will be talking about how we can use this generated map,provided to the robot for Autonomous Navigation using Nav2.Open a new terminal and launch the Nav2(localization and Path-planning), all thanks to @Steven macenski for this great package.
+
+```
+  ros2 launch robot navigation.launch.py
+```
+
+The function which has a variable called use_sim_time , that takes a boolean (either 'true' or 'false').If we are using simulation phase or not (for a simulated robot set the default to ‘true’ , while for a real robot phase set the default parameter to ‘false’).We set to ‘true’ because we are using a simulated robot.
+
+```
+def generate_launch_description():
+   use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+   
+   map_dir = LaunchConfiguration(
+  'map',
+  
+  default=os.path.join(
+  
+  get_package_share_directory('robot'),
+  
+  'maps',
+  
+  'offline.yaml'))
+```
+
+The param_file_name takes in the name of the nav2.yaml file that contains various parameters used in optimizing the robot when sending a goal to the robot.Ours is called ‘nav2.yaml’ which is located in a directory called ‘params’ and the package name is ‘robot’.	
+
+```
+  param_file_name = 'nav2.yaml'
+  
+  param_dir = LaunchConfiguration(
+  
+  'params_file',
+  
+  default=os.path.join(
+  
+  get_package_share_directory('robot'),
+  
+  'params',
+  
+  param_file_name))
+```
+Open a terminal and launch the following:
+```
+  ros2 launch robot show.robot.launch.py world:='path to where the created world was saved'
+```
+
+Then Open another terminal and launch the Navigation stack(Nav2)The launch file automatically launches the Localization and Path-planning Node.
+```
+  ros2 launch robot navigation.launch.py
+```
+# NOTE: The launch file includes the localization node and path planning node in a single thread(component).
+
+After this is launched,we will have to set the initial pose of the robot in the map(initial pose meaning where you think the robot is in the map) This subscribes to the particle filters(it’s a probalistic localization system for a robot which is moving in 2D space it is also called Adaptive Monte Carlo Localization Node).Set the initial pose of the robot using the 2D pose estimate tool and then send navigation command to the robot using the Navigation2 Gaol tool.
+
+
+![Screenshot from 2023-03-31 13-55-49](https://user-images.githubusercontent.com/97457075/229127893-1ec95da4-5106-4984-a2da-9249c0fcf16d.png)
+
+
+
+
+![Screenshot from 2023-03-31 13-55-57](https://user-images.githubusercontent.com/97457075/229127922-045f6fc9-cf7e-408e-a963-e73c3bea404d.png)
+
+
+[Screencast from 03-31-2023 01:54:09 PM.webm](https://user-images.githubusercontent.com/97457075/229128097-158af385-226b-4b83-a844-3520b5771a34.webm)
