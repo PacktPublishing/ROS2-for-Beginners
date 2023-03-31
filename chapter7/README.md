@@ -261,10 +261,12 @@ Then Open another terminal and launch the Navigation stack(Nav2)The launch file 
 
 After this is launched,we will have to set the initial pose of the robot in the map(initial pose meaning where you think the robot is in the map) This subscribes to the particle filters(it’s a probalistic localization system for a robot which is moving in 2D space it is also called Adaptive Monte Carlo Localization Node).Set the initial pose of the robot using the 2D pose estimate tool and then send navigation command to the robot using the Navigation2 Gaol tool.
 
-![Screenshot from 2023-03-31 13-55-49](https://user-images.githubusercontent.com/974!
 
-[Screenshot from 2023-03-31 13-55-57](https://user-images.githubusercontent.com/97457075/229127674-e58b1194-de7d-49ca-8029-6d74bf2c4959.png)
-57075/229127572-ed863434-a68b-4b56-ab29-44c19ac7b335.png)
+![Screenshot from 2023-03-31 13-55-49](https://user-images.githubusercontent.com/97457075/229127893-1ec95da4-5106-4984-a2da-9249c0fcf16d.png)
 
+
+
+
+![Screenshot from 2023-03-31 13-55-57](https://user-images.githubusercontent.com/97457075/229127922-045f6fc9-cf7e-408e-a963-e73c3bea404d.png)
 
 
