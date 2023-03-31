@@ -207,6 +207,8 @@ NOTE: By supplying the the params(parameter) file on the command line, one  can 
 ```
 
 # PERFORMING PATH PLANNING(SEND THE ROBOT TO GO FROM POINT A TO POINT B).
-We have been able to discuss about how we can generate a map of the environment using the slam_toolbox and also how we can save the  generated map.Now,we will be talking about how we can use this generated map,provided to the robot for Autonomous Navigation using Nav2.
+We have been able to discuss about how we can generate a map of the environment using the slam_toolbox and also how we can save the  generated map.Now,we will be talking about how we can use this generated map,provided to the robot for Autonomous Navigation using Nav2.Open a new terminal and launch the Nav2(localization and Path-planning) all thanksto @Steven macenski for this great package.
 
-
+```
+  ros2 launch robot navigation.launch.py
+```
