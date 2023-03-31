@@ -215,13 +215,18 @@ We have been able to discuss about how we can generate a map of the environment 
 
 The function which has a variable called use_sim_time , that takes a boolean (either 'true' or 'false').If we are using simulation phase or not (for a simulated robot set the default to ‘true’ , while for a real robot phase set the default parameter to ‘false’).We set to ‘true’ because we are using a simulated robot.
 
+```
 def generate_launch_description():
    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+   
    map_dir = LaunchConfiguration(
   'map',
+  
   default=os.path.join(
+  
   get_package_share_directory('robot'),
+  
   'maps',
+  
   'offline.yaml'))
-
-
+```
