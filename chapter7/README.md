@@ -201,6 +201,8 @@ negate: 0
 
 occupied_thresh: 0.65
 
+By supplying the the params(parameter) file on the command line, one  can call the map service executable directly as follows:
+   . __params:=<name_of_map>.yaml
 
 
 
