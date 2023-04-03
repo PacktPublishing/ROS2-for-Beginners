@@ -24,6 +24,7 @@ setup(
         'velocity_drive=drive_robot.move_robot:main',
         'trangle=drive_robot.traingle_movement',
         'obstacle_avoidance=drive_robot.avoid_obstacle:main',
+        'navigate=drive_robot.drive_to_goal:main',
         ],
     },
 )
