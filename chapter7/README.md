@@ -277,3 +277,6 @@ After this is launched,we will have to set the initial pose of the robot in the 
  ros2 run drive_robot triangle
 ```
 # ROBOT PROGRAMMING USING ROS 2
+let’s program our robot to drive to a certain distance and telling the robot to stop when it reaches that distance travelled. In this process, we will be making use of the odometry topic and also the command velocity topic.The odometry shows and tells the distance travelled by the robot in a pose and orientation.Let’s echo the    odom topic while the robot is at an initial pose.Open a terminal and spawn the robot into gazebo,like we did earlier.When the robot is spawned echo the odometry topic which is ‘/odom’.We will use  the command.
+
+
