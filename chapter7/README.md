@@ -282,3 +282,8 @@ let’s program our robot to drive to a certain distance and telling the robot t
 ```
   ros2 topic echo /odom
 ```
+We should see an ouput on the terminal,like what shows below.
+
+![Screenshot from 2023-04-03 14-38-09](https://user-images.githubusercontent.com/97457075/229538029-9274bde7-fc64-4bf8-a870-ec23002a4457.png)
+
+
