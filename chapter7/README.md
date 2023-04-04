@@ -293,4 +293,4 @@ The traingluar.py script/node in the package drive_ribot explains the following:
      Overall,this script shows how to use the rclpy library to operate a robot in a ROS 2 environment to carry out a straightforward task.
 
 # Driving the robot in circle with an incremental(++) velocity speed:
-    
+      We will be writing a python node that drives the robot in an incremental speed as the robot moves in circle,we want the robot speed to keep increasing,then when the speed limit get’s to a certain velocity we want the robot to stop.
