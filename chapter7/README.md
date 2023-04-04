@@ -292,6 +292,10 @@ The traingluar.py script/node in the package drive_ribot explains the following:
 - The script creates an extension of the “Node” class offered by rclpy called “Draw_traingle”. Initilizing a publisher to publish messages of type “Twist” to the subject “/cmd_vel” with a queue size of 10 is done in the constructor method. Additionally,it develops a timer that starts the “traingle” technique every two seconds.The robot’s motion to draw  a traingle is specified via the “traingle” approach. It uses the “Twist” message to set the robot’s linear and angular velocities,publishes the messages to the “/cmd_vel” topic,and uses the “get looger” method to log the robot’s current action. Then,it uses the “spin_once” technique offered by rclpy to wait for 1 second before moving on the following step. The script also provides a “main” method that starts the ROS event loop using the “spin” method,makes an instances of the “Draw_traingle” class,destroys the node when the loop ends,and closes  down the rclpy library.
      Overall,this script shows how to use the rclpy library to operate a robot in a ROS 2 environment to carry out a straightforward task.
 
-# Driving the robot in circle with an incremental(++) velocity speed:
+# Driving the robot in circle with an incremental(++) velocity speed,robot stops after 30s.
      
-   - We will be writing a python node that drives the robot in an incremental speed as the robot moves in circle,we want the robot speed to keep increasing,then when the speed limit get’s to a certain velocity we want the robot to stop.
+   -  increment_circle.py 
+   
+   The increment_circle.py Node tells the robot to drive in a circular manner and also the speed of linear of x and angular of z is being increased as the robot drives,robot stops when it is 30s.
+   
+  [Screencast from 04-04-2023 07:26:00 PM.webm](https://user-images.githubusercontent.com/97457075/229885964-3be269ce-87fe-4e11-8cfb-a6461fc6eaba.webm)
