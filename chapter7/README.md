@@ -296,6 +296,6 @@ The traingluar.py script/node in the package drive_ribot explains the following:
      
    -  increment_circle.py 
    
-   The increment_circle.py Node tells the robot to drive in a circular manner and also the speed of linear of x and angular of z is being increased as the robot drives, also the robot stops when it is 30s.
+   The increment_circle.py Node tells the robot to drive in a circular manner and also the speed of linear of x and angular of z is being increased as the robot drives,robot stops when it is 30s.
    
   [Screencast from 04-04-2023 07:26:00 PM.webm](https://user-images.githubusercontent.com/97457075/229885964-3be269ce-87fe-4e11-8cfb-a6461fc6eaba.webm)
