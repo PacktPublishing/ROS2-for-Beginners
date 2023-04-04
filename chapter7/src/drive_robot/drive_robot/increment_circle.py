@@ -13,6 +13,7 @@ class circle_incremental(Node):
         self.clock__ = self.get_clock()
         self.start_time = self.clock__.now()
         self.time = 0.05
+        self.nano_seconds = 30000000000
         
 
     #method circle_increment.
@@ -30,7 +31,7 @@ class circle_incremental(Node):
             self.pub.publish(self.velocity_message)
             self.current_time = self.clock__.now()
             self.time_elapsed = self.current_time - self.start_time
-            if (self.time_elapsed.nanoseconds >30000000000): #30 seconds.
+            if (self.time_elapsed.nanoseconds >self.nano_seconds): #30 seconds.
                 self.velocity_message.linear.x = stop
                 self.velocity_message.angular.z = stop
                 self.get_logger().info('The robot has stopped at velocity speed of:'+str(stop))
