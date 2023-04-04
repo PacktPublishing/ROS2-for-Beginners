@@ -277,7 +277,7 @@ After this is launched,we will have to set the initial pose of the robot in the 
  ros2 run drive_robot triangle
 ```
 # ROBOT PROGRAMMING USING ROS 2
-let’s program our robot to drive to a certain distance and telling the robot to stop when it reaches that distance travelled. In this process, we will be making use of the odometry topic and also the command velocity topic.The odometry shows and tells the distance travelled by the robot in a pose and orientation.Let’s echo the    odom topic while the robot is at an initial pose.Open a terminal and spawn the robot into gazebo,like we did earlier.When the robot is spawned echo the odometry topic which is ‘/odom’.We will use  the command.
+- let’s program our robot to drive to a certain distance and telling the robot to stop when it reaches that distance travelled. In this process, we will be making use of the odometry topic and also the command velocity topic.The odometry shows and tells the distance travelled by the robot in a pose and orientation.Let’s echo the    odom topic while the robot is at an initial pose.Open a terminal and spawn the robot into gazebo,like we did earlier.When the robot is spawned echo the odometry topic which is ‘/odom’.We will use  the command.
 
 ```
   ros2 topic echo /odom
@@ -289,6 +289,9 @@ We should see an ouput on the terminal,like what shows below.
 The traingluar.py script/node in the package drive_ribot explains the following:
 - traingle_movement.py
 
- The script creates an extension of the “Node” class offered by rclpy called “Draw_traingle”. Initilizing a publisher to publish messages of type “Twist” to the subject “/cmd_vel” with a queue size of 10 is done in the constructor method. Additionally,it develops a timer that starts the “traingle” technique every two seconds.The robot’s motion to draw  a traingle is specified via the “traingle” approach. It uses the “Twist” message to set the robot’s linear and angular velocities,publishes the messages to the “/cmd_vel” topic,and uses the “get looger” method to log the robot’s current action. Then,it uses the “spin_once” technique offered by rclpy to wait for 1 second before moving on the following step. The script also provides a “main” method that starts the ROS event loop using the “spin” method,makes an instances of the “Draw_traingle” class,destroys the node when the loop ends,and closes  down the rclpy library.
+- The script creates an extension of the “Node” class offered by rclpy called “Draw_traingle”. Initilizing a publisher to publish messages of type “Twist” to the subject “/cmd_vel” with a queue size of 10 is done in the constructor method. Additionally,it develops a timer that starts the “traingle” technique every two seconds.The robot’s motion to draw  a traingle is specified via the “traingle” approach. It uses the “Twist” message to set the robot’s linear and angular velocities,publishes the messages to the “/cmd_vel” topic,and uses the “get looger” method to log the robot’s current action. Then,it uses the “spin_once” technique offered by rclpy to wait for 1 second before moving on the following step. The script also provides a “main” method that starts the ROS event loop using the “spin” method,makes an instances of the “Draw_traingle” class,destroys the node when the loop ends,and closes  down the rclpy library.
      Overall,this script shows how to use the rclpy library to operate a robot in a ROS 2 environment to carry out a straightforward task.
 
+# Driving the robot in circle with an incremental(++) velocity speed:
+     
+   - We will be writing a python node that drives the robot in an incremental speed as the robot moves in circle,we want the robot speed to keep increasing,then when the speed limit get’s to a certain velocity we want the robot to stop.
