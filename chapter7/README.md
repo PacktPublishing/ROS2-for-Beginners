@@ -294,7 +294,6 @@ The traingluar.py script/node in the package drive_ribot explains the following:
 
 # Driving the robot in circle with an incremental(++) velocity speed:
      
-   We will be writing a python node that drives the robot in an incremental speed as the robot moves in circle,we want the robot speed to keep increasing,then when the speed limit get’s to a certain velocity we want the robot to stop.
    -  increment_circle.py 
    
    The increment_circle.py Node tells the robot to drive in a circular manner and also the speed of linear of x and angular of z is being increased as the robot drives, also the robot stops when it is 30s.
