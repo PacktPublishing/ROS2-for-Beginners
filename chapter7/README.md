@@ -13,7 +13,7 @@ Fisrt step :
   
 - cd .. into the root of ~/ros2_ws/
 
-- colco build
+- colcon build
 
 
 
