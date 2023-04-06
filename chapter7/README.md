@@ -1,8 +1,4 @@
-# Ros-2-simulated-robot.
-A ros 2 simulated robot.
-
-
-Fisrt step in building the differential-drive robot:
+Fisrt step :
 # MAkE A DIRECTORY CALLED robot in the src directory of your workspace and clone the package in it.
 ```
   mkdir -p ~/ros2_ws/src
