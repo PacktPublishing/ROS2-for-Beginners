@@ -11,7 +11,7 @@ Fisrt step :
 ```
 - In the robot directory clone the package in it.
   
-- cd .. into the root of ~/ros2_ws/
+- cd .. into the root ~/ros2_ws/
 
 - colcon build
 
