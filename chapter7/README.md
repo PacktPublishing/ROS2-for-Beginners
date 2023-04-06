@@ -1,9 +1,25 @@
 # Ros-2-simulated-robot.
 A ros 2 simulated robot.
 
-NOTE: You can also use a cad design software(FUSION 360, SOLIDWORKS......) to design the robot and export to ROS  and also ROS 2,but this is just a repository that describes how to design a robot manually, by writing .xacro files which are said to be robot meshes.
 
 Fisrt step in building the differential-drive robot:
+# MAkE A DIRECTORY CALLED robot in the src directory of your workspace and clone the package in it.
+```
+  mkdir -p ~/ros2_ws/src
+```
+```
+  cd ~/ros2_ws/
+```
+```
+ ~/ros2_ws/src mkdir robot
+```
+- In the robot directory clone the package in it.
+  
+- cd .. into the root of ~/ros2_ws/
+
+- colco build
+
+
 
 Launch the Node:
 ```
