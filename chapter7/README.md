@@ -221,8 +221,18 @@ NOTE: By supplying the the params(parameter) file on the command line, one  can 
 # PERFORMING PATH PLANNING(SEND THE ROBOT TO GO FROM POINT A TO POINT B).
 We have been able to discuss about how we can generate a map of the environment using the slam_toolbox and also how we can save the  generated map.Now,we will be talking about how we can use this generated map,provided to the robot for Autonomous Navigation using Nav2.Open a new terminal and launch the Nav2(localization and Path-planning), all thanks to @Steven macenski for this great package.
 
+# AUTONOMOUS NAVIGATION:
+ Localization:
+ ```
+    ros2 launch robot localization.launch.py map:=/home/magnum/simuate_ws/src/robot/maps/offline.yaml  use_sim_time:=true
 ```
-  ros2 launch robot navigation.launch.py
+But if you want to use the localization mode (AMCL) you have to specify the path in which your map.yaml file is located and pass it into map:=""
+
+-  ros2 launch robot localization.launch.py map:=""   use_sim_time:=true
+
+Navigation Mode(NAV2 stack)
+```
+   ros2 launch  robot nav.launch.py use_sim_time:=true map_subscribe_transient_local:true
 ```
 
 The function which has a variable called use_sim_time , that takes a boolean (either 'true' or 'false').If we are using simulation phase or not (for a simulated robot set the default to ‘true’ , while for a real robot phase set the default parameter to ‘false’).We set to ‘true’ because we are using a simulated robot.
