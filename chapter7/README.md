@@ -127,8 +127,6 @@ Open a new terminal and type the command below:
 ```
 You will see the robot drive forward like the video illustracted below:
 
-[Screencast from 03-26-2023 03:47:34 PM.webm](https://user-images.githubusercontent.com/97457075/227783989-12f4b40f-e356-4ea7-907f-0c4183c9544b.webm)
-
 We can echo the '/cmd_vel' topic to see the amount of velocity speed which is being published to the robot,since the robot is driving forward at 0.2.We should see 0.2  at linear of x ,being echoed out.Command as stated below:
 ```
   ros2 topic echo /cmd_vel
